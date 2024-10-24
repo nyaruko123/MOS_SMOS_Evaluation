@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOS & SMOS Evaluation</title>
+    <style>
+        /* 简单的表格样式 */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="number"] {
+            width: 50px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 align="center">WOMAN TO MAN Evaluation</h1>
+<p align="center">Please rate the naturalness (MOS) and similarity (SMOS) of each audio clip, with 1 being the lowest and 5 being the highest</p>
+<p align="center">MOS is commonly used to assess the audio quality of speech generation or conversion systems</p>
+<p align="center">SMOS evaluates the similarity of the generated audio to the target speaker</p>
+
+<!-- 表格显示音频文件和评分 -->
+<table>
+    <thead>
+        <tr>
+            <th>Source Audio</th>
+            <th>Target Audio</th>
+            <th>Converted Audio1</th>
+            <th>Converted Audio2</th>
+            <th>Converted Audio3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 第一行音频示例 -->
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM1/p225_001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM1/p226_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM1/WTM1.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM1/WTM1_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM1/WTM1_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM2/p225_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM2/p227_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM2/WTM2.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM2/WTM2_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM2/WTM2_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM3/p225_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM3/p232_004.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM3/WTM3.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM3/WTM3_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM3/WTM3_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM4/p228_001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM4/p226_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM4/WTM4.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM4/WTM4_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM4/WTM4_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM5/p228_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM5/p227_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM5/WTM5.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM5/WTM5_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM5/WTM5_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM6/p228_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM6/p232_004.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM6/WTM6.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM6/WTM6_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM6/WTM6_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM7/p229_001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM7/p226_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM7/WTM7.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM7/WTM7_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM7/WTM7_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM8/p229_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM8/p227_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM8/WTM8.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM8/WTM8_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM8/WTM8_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM9/p229_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM9/p232_004.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM9/WTM9.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM9/WTM9_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM9/WTM9_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM10/p231_001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM10/p226_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM10/WTM10.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM10/WTM10_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM10/WTM10_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM11/p231_002.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM11/p227_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM11/WTM11.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM11/WTM11_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM11/WTM11_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+        <tr>
+            <td><audio controls><source src="Audio/WTM/WTM12/p231_003.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM12/p232_004.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Audio/WTM/WTM12/WTM12.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM12/WTM12_A.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+            <td><audio controls><source src="Audio/WTM/WTM12/WTM12_S.wav" type="audio/wav"></audio><br>sim:<input type="number" name="mos_3" min="1" max="5"><br>nat:<input type="number" name="smos_3" min="1" max="5"></td>
+        </tr>  
+    </tbody>
+</table>
+
+<!-- 提交按钮 -->
+<button class="submit-btn" onclick="submitResults()">Submit Results</button>
+
+<script>
+    // 提交结果的函数
+    function submitResults() {
+        let results = "";
+        let mosInputs = document.querySelectorAll('input[name^="mos"]');
+        let smosInputs = document.querySelectorAll('input[name^="smos"]');
+
+        // 遍历每个MOS和SMOS输入框
+        for (let i = 0; i < mosInputs.length; i++) {
+            let mos = mosInputs[i].value;
+            let smos = smosInputs[i].value;
+
+            // 如果评分不完整，弹出提示
+            if (mos === "" || smos === "") {
+                alert("Please complete all ratings!");
+                return;
+            }
+
+            // 结果文本 (可扩展为上传到服务器或下载为文件)
+            results += `Audio ${i + 1} - MOS: ${mos}, SMOS: ${smos}\n`;
+        }
+
+        // 下载结果
+        download("resultsWTM.txt", results);
+    }
+
+    // 下载文本文件的函数
+    function download(filename, text) {
+        let pom = document.createElement('a');
+        pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        pom.setAttribute('download', filename);
+
+        if (document.createEvent) {
+            let event = document.createEvent('MouseEvents');
+            event.initEvent('click', true, true);
+            pom.dispatchEvent(event);
+        } else {
+            pom.click();
+        }
+    }
+</script>
+
+</body>
+</html>
